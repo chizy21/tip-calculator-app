@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Greg Perry" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -18,9 +17,9 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
     <link
       rel="stylesheet"
       media="(prefers-color-scheme:light)"
@@ -55,15 +54,76 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://www.frontendmentor.io/profile/chizy21">Greg Perry</a>.
+    <div class="container">
+      <div class="main-container">
+        <div class="left">
+          <div class="bill-container">
+          <p class="bill">Bill</p>
+          <div class="input-container">
+            <div class="input">
+              <span class="dollar">
+                <img src="/images/icon-dollar.svg" alt="dollar sign">
+              </span>
+              <input type="number" placeholder="0" />
+            </div>  
+          </div>
+          <div class="tip-container">
+            <p class="tip">Select Tip %</p>
+            <div class="percentage">
+                <button class="tip-5">5%</button>
+                <button class="tip-10">10%</button>
+                <button class="tip-15">15%</button>
+                <button class="tip-25">25%</button>
+                <button class="tip-50">50%</button>
+                <button class="tip-custom">Custom</button>
+            </div>  
+          </div>
+          <div class="people">
+            <p class="num-people">Number of People</p>
+            <div class="input-container">
+              <div class="input">
+                <span class="person">
+                  <img src="/images/icon-person.svg" alt="person icon">
+                </span>
+                <input type="number" placeholder="0" />
+              </div>  
+          </div>
+        </div>
+        <div class="right">
+          <div class="tip-calculation">
+            <div class="tip-amount-container">
+              <div class="tip-amount">
+                <p class="tip-amount">Tip Amount</p>
+                <p class="tip-perperson">/ person</p>  
+              </div>
+              <div class="tip-amount-numbers">
+                <textarea name="tip-amount-total" id="tip-amount-total" cols="8" rows="1"></textarea>  
+              </div>  
+            </div>
+            <div class="tip-total-container">
+              <div class="tip-total">
+                <p class="total-amount">Total</p> 
+                <p class="total-perperson">/ person</p>   
+              </div>
+              <textarea name="tip-amount-total" id="tip-amount-total" cols="8" rows="1"></textarea>  
+            </div>
+            <div class="reset">
+              <button class="reset-btn">Reset</button>
+            </div>
+          </div>  
+        </div>
+      </div>
     </div>
+    <br />
+    <hr />
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/chizy21">Greg Perry</a>.
+      </div>
+    </footer>
   </body>
 </html>

@@ -14,7 +14,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/chizy21/tip-calculator-app)
+- Solution URL: [Github link to solution](https://github.com/chizy21/tip-calculator-app)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
